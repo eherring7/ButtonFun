@@ -16,6 +16,10 @@
 		0EFA43F11B4EDEE30040298E /* ButtonFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA43F01B4EDEE30040298E /* ButtonFunTests.m */; };
 		0EFA43FD1B4EDF580040298E /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA43FB1B4EDF580040298E /* CollectionViewCell.m */; };
 		0EFA43FE1B4EDF580040298E /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EFA43FC1B4EDF580040298E /* CollectionViewCell.xib */; };
+		0EFA44001B4EE8400040298E /* sportsover.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0EFA43FF1B4EE8400040298E /* sportsover.wav */; };
+		0EFA44021B4EE8720040298E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFA44011B4EE8720040298E /* AudioToolbox.framework */; };
+		0EFA44041B4EE8780040298E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFA44031B4EE8780040298E /* AVFoundation.framework */; };
+		0EFA440A1B4EEC580040298E /* espnlogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EFA44091B4EEC580040298E /* espnlogo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		0EFA43FA1B4EDF580040298E /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		0EFA43FB1B4EDF580040298E /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		0EFA43FC1B4EDF580040298E /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		0EFA43FF1B4EE8400040298E /* sportsover.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sportsover.wav; sourceTree = "<group>"; };
+		0EFA44011B4EE8720040298E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0EFA44031B4EE8780040298E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0EFA44091B4EEC580040298E /* espnlogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = espnlogo.jpg; path = ../../../../Downloads/espnlogo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EFA44041B4EE8780040298E /* AVFoundation.framework in Frameworks */,
+				0EFA44021B4EE8720040298E /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +81,8 @@
 				0EFA43D31B4EDEE20040298E /* ButtonFun */,
 				0EFA43ED1B4EDEE30040298E /* ButtonFunTests */,
 				0EFA43D21B4EDEE20040298E /* Products */,
+				0EFA44031B4EE8780040298E /* AVFoundation.framework */,
+				0EFA44011B4EE8720040298E /* AudioToolbox.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +116,8 @@
 		0EFA43D41B4EDEE30040298E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0EFA44091B4EEC580040298E /* espnlogo.jpg */,
+				0EFA43FF1B4EE8400040298E /* sportsover.wav */,
 				0EFA43D51B4EDEE30040298E /* Info.plist */,
 				0EFA43D61B4EDEE30040298E /* main.m */,
 			);
@@ -208,6 +222,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EFA43E01B4EDEE30040298E /* Main.storyboard in Resources */,
+				0EFA44001B4EE8400040298E /* sportsover.wav in Resources */,
+				0EFA440A1B4EEC580040298E /* espnlogo.jpg in Resources */,
 				0EFA43E51B4EDEE30040298E /* LaunchScreen.xib in Resources */,
 				0EFA43FE1B4EDF580040298E /* CollectionViewCell.xib in Resources */,
 				0EFA43E21B4EDEE30040298E /* Images.xcassets in Resources */,
@@ -428,6 +444,7 @@
 				0EFA43F61B4EDEE30040298E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0EFA43F71B4EDEE30040298E /* Build configuration list for PBXNativeTarget "ButtonFunTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +453,7 @@
 				0EFA43F91B4EDEE30040298E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

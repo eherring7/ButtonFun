@@ -17,6 +17,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // Play start up sound
+    NSString *soundFilePath = [[NSBundle mainBundle] pathForResource:@"sportsover"
+                                                              ofType:@"wav"];
+    NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
+    _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFileURL error:nil];
+    _audioPlayer.numberOfLoops = 0;
+    [_audioPlayer play];
+    
     return YES;
 }
 
